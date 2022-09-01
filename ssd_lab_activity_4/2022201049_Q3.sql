@@ -1,0 +1,18 @@
+
+USE `CUSTOMER_DB`;
+DROP procedure IF EXISTS `CUSTOMER_DB`.`2022201049_Q3`;
+;
+
+DELIMITER $$
+USE `CUSTOMER_DB`$$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `2022201049_Q3`()
+BEGIN
+	Select temp.CUST_NAME, temp.GRADE from (Select CUST_NAME, GRADE , OPENING_AMT + RECEIVE_AMT as tt from customer) as temp where tt > 10000;
+	
+END$$
+
+DELIMITER ;
+;
+
+
+call CUSTOMER_DB.2022201049_Q3();
