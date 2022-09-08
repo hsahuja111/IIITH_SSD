@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body class="bod">
+    
+    <center><h1> Students Records </h1></center>
+   
+       <div class="center2">
+          
+          <input id="NameOfStudent" type="text" placeholder="Enter Name" name="uname" required>
+
+          
+          <input id="RollNoOfStudent" type="text" placeholder="Enter RollNumber" name="psw" required>
+          
+  
+          <button  id="add" type="submit" class="b1" onclick="addData()">Add New</button>
+         
+        
+      
+       </br>
+       <br>
+
+        <table id="tbl" class="tablec">
+            <thead>
+                <th>Name Of Student</th>
+                <th>Roll Number</th>
+            </thead>
+
+            <tbody>
+
+            </tbody>
+          
+          </table>
+       <br>
+
+          <button id="delete" class="b2" type="submit" onclick="deleteData()">Delete</button>
+        </div>
+
+    <script src="dom.js"></script>
+
+
+</body>
+</html>
