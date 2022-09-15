@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+
+ </head>
+
+ <body class="bod" >
+        <center>
+        <form name="myForm"  >
+        <p>
+             Manager Name: <input type="text" name="name" required>   </p>
+             <p> Group Email: <input type="text" name="email" > <span class="error" id="emailError"></span>  </p>
+             <p> Server Username: <input type="text" name="servername" required> <span class="error" id="serverError"></span> </p>
+             <p>Server Password: <input type="password" name="spass" required> <span class="error" id="spassError"> </span></p>
+             
+             <p>Confirm Password: <input type="password" name="scpass" required> <span class="error" id="scpassemailError"> </span></p>
+            
+             <!-- <p><label for="1stPassword">Password:</label>
+             <input type="password" id="1stPassword" name="1stPassword" />
+             </p>
+             
+             <p><label for="ConfirmPassword">Confirm Password:</label>
+             <input type="password" id="ConfirmPassword" name="ConfirmPassword"/>
+             </p> -->
+
+             <p>Team Lead: <input type="text" name="teamlead" required> </p>
+             <p>Team Members: <select> name = "dropdown"> 
+                <option value = "Ram" selected>Ram</option>
+                <option value = "Shaam">Shaam</option>
+                <option value = "Anil">Anil</option>
+             </select> </p>
+
+             
+             <div class="box" > 
+                <p>Nikhil</p>
+                <p>Akash</p>
+                <p>Jatin</p>
+                <p>Mayush</p>
+             </div>
+             <div class="box" > 
+
+                
+
+            </div>
+
+            <input type="submit" value="Submit"  onclick="validateForm()">
+
+             
+           
+        </form>
+
+        <script src="dom.js"></script>
+
+    </center>
+
+    
+</body>
+</html>
